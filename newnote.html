@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <!-- Hidden Form -->
+<div class="overlay active" id="overlay">
+
+    <div class="card">
+        <div class="box">
+
+            <h1>New Call</h1>
+
+            <form class="form">
+
+                
+
+                <div class="formgrp">
+                    <small>Title</small>
+                </div>
+                <input type="text" placeholder="Enter title">
+
+                <div class="formgrp">
+                    <small>Description</small>
+                </div>
+                <input type="text" placeholder="Enter description">
+
+                
+
+                <div class="formgrp">
+                    <small>Category</small>
+
+                    <div class="list">
+
+                        <label>
+                            <input type="radio" name="category"value="emergency">
+                            Emergency
+                        </label>
+
+                        <label>
+                            <input type="radio" name="category"value="important">
+                            Important
+                        </label>
+
+                        <label>
+                            <input type="radio" name="category"value="urgent">
+                            Urgent
+                        </label>
+
+                        <label>
+                            <input type="radio" name="category" value="norush">
+                            No Rush
+                        </label>
+
+                    </div>
+                    <input type="submit" class = "sub">
+                    <div class="createnote">
+                        Create Note
+                    </div>
+
+                    <a href="idx.html" class="close" id="closeBtn">
+                        Close
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

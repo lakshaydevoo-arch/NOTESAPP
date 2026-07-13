@@ -1,0 +1,167 @@
+.card {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 89vh;
+  border: 2px solid gray;
+  margin-top: 40px;
+  padding: 20px 20px;
+  margin-left: 206px;
+  margin-right: 225px;
+  border-radius: 10px;
+  position: relative;
+  background-color: rgba(89, 87, 87, 0.458);
+}
+.box h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px;
+  font-size: larger;
+  padding-bottom: 5px;
+}
+.card > {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+}
+.form{
+    display: flex;
+    position: relative;
+      top: 25px;
+  left: 0;
+  margin: 0;
+  padding: 10px;
+  font-size: small;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+input{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    border-radius: 5.5px;
+    background-color: gray;
+    opacity: 100%;
+    color: rgb(16, 15, 15);
+    width: 250px;
+}
+
+li{
+    padding-left: 6px;
+}
+label {
+    display: flex;
+    
+  
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-top: 8px;
+    
+}
+
+input[type = "radio"]{
+   margin-left: -110px;
+    margin-right: -110px;
+    
+}
+
+
+
+
+
+.createnote{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 35px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+  
+  
+    margin-top: 21px;
+    border-radius: 20px;
+    color: aliceblue;
+    font-size: large;
+
+}
+.close{
+      position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 35px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+  
+    
+    margin-top: 21px;
+    border-radius: 20px;
+    color: aliceblue;
+    font-size: large;
+}
+
+body{
+    margin:0;
+    background:#ececec;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.notes-container{
+    width:90%;
+    margin:auto;
+    padding-top:30px;
+}
+
+.notes{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:20px;
+}
+
+.note{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+}
+
+.note h3{
+    margin-top:0;
+}
+
+.add-btn{
+    position:absolute;
+    bottom:30px;
+    right:30px;
+    width:65px;
+    height:65px;
+    border-radius:80%;
+    border:none;
+    background:#ff00aa;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.5);
+     display: none;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay.active{
+    display:flex;
+}
+.sub{
+display: none;
+}
+.createnote{
+    cursor: pointer;
+}
